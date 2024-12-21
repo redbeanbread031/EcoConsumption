@@ -2,7 +2,10 @@
 import java.util.*;
 
 class EcoScoreCalculator {
-    private static final List<String> ECO_KEYWORDS = Arrays.asList("eco", "green", "recycle", "친환경", "recycling", "재사용", "재활용");
+    private static final List<String> ECO_KEYWORDS = Arrays.asList(
+        "eco", "green", "recycle", "친환경", "recycling", "재사용", "재활용",
+        "greenwashing", "그린워싱", "탄소발자국"
+        );
     private static final int MAX_SCORE = 100;
 
     public int calculateScore(List<Transaction> transactions) {
