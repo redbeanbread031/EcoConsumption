@@ -104,7 +104,7 @@ public class EcoScoreApp {
         System.out.println("안녕하세요! 이 프로그램은 <마이데이터 기반 친환경 소비 촉진 서비스(가제)>의 데모 프로그램입니다.");
         System.out.println("현 프로그램은 5개의 메뉴로 되어 있으며, 각 메뉴는 서비스의 주요 매커니즘을 간략하게 구현한 것입니다.");
         System.out.println("또한, 본 서비스는 모든 기능이 구현된 상태가 아니며, 아이디어에 제공된 의도를 중심으로 작성되었음을 양해 부탁드립니다.");
-        System.out.println("(주의할 점: 초반 mock data는 입력된 상태이므로 처음엔 메뉴 2번을 입력해 내역을 불러와 주시길 바랍니다.)");
+        //System.out.println("(주의할 점: 초반 mock data는 입력된 상태이므로 처음엔 메뉴 2번을 입력해 내역을 불러와 주시길 바랍니다.)");
         System.out.println("그렇다면 데모 서비스를 즐겨주시길 바랍니다!:)");
         System.out.println("========================================================");
     }
@@ -134,16 +134,12 @@ public class EcoScoreApp {
         cardHistory.addTransaction("green energy subscription");
         cardHistory.addTransaction("plastic bottleinitiative");
         cardHistory.addTransaction("식품 구입");
-        cardHistory.addTransaction("eco-friendly reusable bag purchase");
-        cardHistory.addTransaction("green energy subscription");
-        cardHistory.addTransaction("plastic bottle recycling initiative");
-        cardHistory.addTransaction("친환경 식품 구입");
-        cardHistory.addTransaction("eco-friendly reusable bag purchase");
-        cardHistory.addTransaction("green energy subscription");
-        cardHistory.addTransaction("plastic bottle recycling initiative");
-        cardHistory.addTransaction("친환경 식품 구입");
-        cardHistory.addTransaction("eco-friendly reusable bag purchase");
-        cardHistory.addTransaction("green energy subscription");
+        for (int i=0;i<20;i++){
+            cardHistory.addTransaction("eco-friendly reusable bag purchase");
+            cardHistory.addTransaction("green energy subscription");
+            cardHistory.addTransaction("plastic bottle recycling initiative");
+            cardHistory.addTransaction("친환경 식품 구입");
+        }
 
         printInfo();
 

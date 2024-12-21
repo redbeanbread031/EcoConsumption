@@ -1,3 +1,4 @@
+
 class EcoScoreTracker {
     private static int totalScore = 0;
 
